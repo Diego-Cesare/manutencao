@@ -17,7 +17,7 @@
       <form action="https://formsubmit.co/smectmanutencao@gmail.com" method="POST" class="form">
         <div class="unidade">
           <label for="name">Unidade</label>
-          <input type="text" name="Unidade" id="name" required />
+          <input placeholder="Nome da unidade de ensino" type="text" name="Unidade" id="name" required />
         </div>
 
         <div class="endereco">
@@ -32,20 +32,24 @@
         </div>
 
         <div class="tipo">
-          <label for="text">Tipo</label>
+          <label for="text">Selecione o tipo de manutenção</label>
           <select id="options" onchange="updateInput()">
+            <option value="" disabled selected>Selecione</option>
             <option value="option1">Telhado</option>
-            <option value="option1">Elétrica</option>
-            <option value="option2">Hidraulica</option>
-            <option value="option3">Esgoto</option>
-            <option value="option4">Pintura interna</option>
-            <option value="option4">Pintura externa</option>
-            <option value="option5">Limpeza</option>
+            <option value="option2">Elétrica</option>
+            <option value="option3">Hidraulica</option>
+            <option value="option4">Esgoto</option>
+            <option value="option5">Pintura interna</option>
+            <option value="option6">Pintura externa</option>
+            <option value="option7">Limpeza</option>
+            <option value="option8">Outros</option>
           </select>
           <br><br>
-          <input type="text" name="Tipo" id="selectedOption" required />
-          <label for="message">Solicitamos á</label>
-          <textarea name="Solicitações" id="message" required></textarea>
+          <input placeholder="Não adicone mais de 1 item por pedido!" type="text" name="Tipo" id="selectedOption"
+            required />
+          <label for="message">Adicione as manutenções a serem solicitadas</label>
+          <textarea placeholder="Ao fim de cada pedido, pule para a linha a baixo!" name="Solicitações" id="message"
+            required></textarea>
         </div>
         <button type="submit">Enviar</button>
         <input type="hidden" name="_captcha" value="false" />

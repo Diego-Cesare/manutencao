@@ -18,6 +18,10 @@ body {
   justify-content: center;
 }
 
+.titulo {
+  margin-bottom: 1rem;
+}
+
 h1,
 h2 {
   font-size: 3rem;
@@ -46,6 +50,11 @@ h2 {
   border: none;
   border-radius: 8px;
   font-size: 1.125rem;
+  transition: 1s;
+}
+
+#options:focus {
+  outline: none;
 }
 
 .form label,
@@ -84,12 +93,12 @@ h2 {
 .form textarea:hover,
 .form textarea:focus {
   outline: none;
-  border-color: tomato;
+  border-color: rgb(71, 89, 255);
 }
 
 .form button {
   padding: 1rem;
-  background: tomato;
+  background: rgb(71, 89, 255);
   color: #ffffff;
   font: inherit;
   border: none;
@@ -105,7 +114,7 @@ h2 {
   background: #09d;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   h1 {
     font-size: 1.5rem;
   }

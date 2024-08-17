@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de manutenção</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="principal">
+    <div class="titulo">
+      <h1>Solicitação para Manutenção</h1>
+    </div>
+    <div class="formularios">
+      <form action="https://formsubmit.co/diegocesare300491@gmail.com" method="POST" class="form">
+        <div class="unidade">
+          <label for="name">Unidade</label>
+          <input type="text" name="Unidade" id="name" required />
+        </div>
+
+        <div class="endereco">
+          <div class="end">
+            <label for name>Bairro</label>
+            <input type="text" name="Endereço" id="endereco" required />
+          </div>
+          <div class="tel">
+            <label for name>Telefone</label>
+            <input type="text" name="Telefone" id="telefone" placeholder="Opcional" />
+          </div>
+        </div>
+
+        <div class="tipo">
+          <label for="text">Tipo</label>
+          <select id="options" onchange="updateInput()">
+            <option value="option1">Telhado</option>
+            <option value="option1">Elétrica</option>
+            <option value="option2">Hidraulica</option>
+            <option value="option3">Esgoto</option>
+            <option value="option4">Pintura interna</option>
+            <option value="option4">Pintura externa</option>
+            <option value="option5">Limpeza</option>
+          </select>
+          <br><br>
+          <input type="text" name="Tipo" id="selectedOption" required />
+          <label for="message">Solicitamos á</label>
+          <textarea name="Requeremos" id="message" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

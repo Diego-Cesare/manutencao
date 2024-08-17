@@ -114,6 +114,20 @@ h2 {
   background: #09d;
 }
 
+.obrigada {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.enviado {
+  color: rgb(45, 194, 0);
+}
+
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 1.5rem;
@@ -121,5 +135,9 @@ h2 {
 
   .form {
     max-width: 20rem;
+  }
+
+  .obrigada h1 {
+    font-size: 1.2rem;
   }
 }

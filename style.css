@@ -71,6 +71,11 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.form i {
+  color: #09d;
+  padding: 0 5px;
+}
+
 .form input,
 .form textarea {
   font: inherit;

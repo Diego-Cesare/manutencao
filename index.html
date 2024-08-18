@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png"
     href="https://www.pngkey.com/png/detail/507-5071237_support-services-equipamento-em-manuteno-preventiva.png" />
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -18,23 +19,23 @@
     <div class="formularios">
       <form action="https://formsubmit.co/smectmanutencao@gmail.com" method="POST" class="form">
         <div class="unidade">
-          <label for="name">Unidade</label>
+          <label for="name"><i class='bx bx-home-smile'></i>Unidade</label>
           <input placeholder="Nome da unidade de ensino" type="text" name="Unidade" id="name" required />
         </div>
 
         <div class="endereco">
           <div class="end">
-            <label for name>Bairro</label>
+            <label for name><i class='bx bx-location-plus'></i>Bairro</label>
             <input type="text" name="Endereço" id="endereco" required />
           </div>
           <div class="tel">
-            <label for name>Telefone</label>
+            <label for name><i class='bx bx-phone-call'></i>Telefone</label>
             <input type="text" name="Telefone" id="telefone" placeholder="Opcional" />
           </div>
         </div>
 
         <div class="tipo">
-          <label for="text">Selecione o tipo de manutenção</label>
+          <label for="text"><i class='bx bx-cog'></i>Selecione o tipo de manutenção</label>
           <select id="options" onchange="updateInput()">
             <option value="" disabled selected>Selecione</option>
             <option value="Telhado">Telhado</option>
@@ -49,7 +50,7 @@
           <br><br>
           <input placeholder="Não adicone mais de 1 item por pedido!" type="text" name="Tipo" id="selectedOption"
             required />
-          <label for="message">Adicione as manutenções a serem solicitadas</label>
+          <label for="message"><i class='bx bx-chat'></i>Adicione as manutenções a serem solicitadas</label>
           <textarea onclick="valideType()" placeholder="Ao fim de cada pedido, pule para a linha a baixo!"
             name="Solicitações" id="message" required></textarea>
           <button onmouseenter="valideType()" type="submit">Enviar</button>

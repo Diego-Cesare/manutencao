@@ -1,64 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitação de manutenção</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.pngkey.com/png/detail/507-5071237_support-services-equipamento-em-manuteno-preventiva.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solicitação de manutenção</title>
-  <link rel="icon" type="image/png"
-    href="https://www.pngkey.com/png/detail/507-5071237_support-services-equipamento-em-manuteno-preventiva.png" />
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body>
-  <div class="principal">
-    <div class="titulo">
-      <h1>Solicitação para Manutenção</h1>
-    </div>
-    <div class="formularios">
-      <form action="https://formsubmit.co/smectmanutencao@gmail.com" method="POST" class="form">
-        <div class="unidade">
-          <label for="name"><i class='bx bx-home-smile'></i>Unidade</label>
-          <input placeholder="Nome da unidade de ensino" type="text" name="Unidade" id="name" required />
-        </div>
-
-        <div class="endereco">
-          <div class="end">
-            <label for name><i class='bx bx-location-plus'></i>Bairro</label>
-            <input type="text" name="Endereço" id="endereco" required />
+  <body>
+    <div class="principal">
+      <div class="titulo">
+        <h1>Solicitação para Manutenção</h1>
+      </div>
+      <div class="formularios">
+        <form action="<!--E-MAIL-->>" method="POST" class="form">
+          <div class="unidade">
+            <label for="name"><i class="bx bx-home-smile"></i>Unidade</label>
+            <input
+              placeholder="Nome da unidade de ensino"
+              type="text"
+              name="Unidade"
+              id="name"
+              required
+            />
           </div>
-          <div class="tel">
-            <label for name><i class='bx bx-phone-call'></i>Telefone</label>
-            <input type="text" name="Telefone" id="telefone" placeholder="Opcional" />
+
+          <div class="endereco">
+            <div class="end">
+              <label for name><i class="bx bx-location-plus"></i>Bairro</label>
+              <input type="text" name="Endereço" id="endereco" required />
+            </div>
+            <div class="tel">
+              <label for name><i class="bx bx-phone-call"></i>Telefone</label>
+              <input
+                type="text"
+                name="Telefone"
+                id="telefone"
+                placeholder="Opcional"
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="tipo">
-          <label for="text"><i class='bx bx-cog'></i>Selecione o tipo de manutenção</label>
-          <select id="options" onchange="updateInput()">
-            <option value="" disabled selected>Selecione</option>
-            <option value="Telhado">Telhado</option>
-            <option value="Elétrica">Elétrica</option>
-            <option value="Hidraulica">Hidraulica</option>
-            <option value="Esgoto">Esgoto</option>
-            <option value="Carpintaria">Carpintaria</option>
-            <option value="Pintura">Pintura</option>
-            <option value="Limpeza">Limpeza</option>
-            <option value="Outros">Outros</option>
-          </select>
-          <br><br>
-          <input placeholder="Apenas 1 item por pedido!" type="text" name="Tipo" id="selectedOption" required />
-          <label for="message"><i class='bx bx-chat'></i>Solicitações</label>
-          <textarea onclick="valideType()" placeholder="Ao fim de cada pedido, pule para a linha a baixo!"
-            name="Solicitações" id="message" required></textarea>
-          <button onmouseenter="valideType()" type="submit">Enviar</button>
-          <!--input type="hidden" name="_captcha" value="false" /-->
-        </div>
-      </form>
+          <div class="tipo">
+            <label for="text"
+              ><i class="bx bx-cog"></i>Selecione o tipo de manutenção</label
+            >
+            <select id="options" onchange="updateInput()">
+              <option value="" disabled selected>Selecione</option>
+              <option value="Telhado">Telhado</option>
+              <option value="Elétrica">Elétrica</option>
+              <option value="Hidraulica">Hidraulica</option>
+              <option value="Esgoto">Esgoto</option>
+              <option value="Carpintaria">Carpintaria</option>
+              <option value="Pintura">Pintura</option>
+              <option value="Limpeza">Limpeza</option>
+              <option value="Outros">Outros</option>
+            </select>
+            <br /><br />
+            <input
+              placeholder="Apenas 1 item por pedido!"
+              type="text"
+              name="Tipo"
+              id="selectedOption"
+              required
+            />
+            <label for="message"><i class="bx bx-chat"></i>Solicitações</label>
+            <textarea
+              onclick="valideType()"
+              placeholder="Ao fim de cada pedido, pule para a linha a baixo!"
+              name="Solicitações"
+              id="message"
+              required
+            ></textarea>
+            <button onmouseenter="valideType()" type="submit">Enviar</button>
+            <!--input type="hidden" name="_captcha" value="false" /-->
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
+
